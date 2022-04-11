@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img{ align:center; }
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>MEET OUR TUTORS</h1>
+  
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="maleava3.jpg" alt="Jayesh"  style="width:50% ; height:200px">
+      <div class="container">
+        <h2>JAYESH</h2>
+        <p class="title">ECE TEACHER</p>
+        <p>IIT BOMBAY GRADUATE</p>
+        <p>EXPERIENCE OF 7 YEARS</p>
+        <p><button class="button">CONTACT</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="maleava1.png" alt="SARANSH"  style="width:50% ; height:200px">
+      <div class="container">
+        <h2>SARANSH</h2>
+        <p class="title">CSE TEACHER</p>
+        <p>MIT CAMBRIDGE</p>
+        <p>EXPERIENCE OF 5 YEARS</p>
+        <p><button class="button">CONTACT</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="maleava2.jpg" alt="AMIT"  style="width:50% ; height:200px" >
+      <div class="container">
+        <h2>AMIT</h2>
+        <p class="title">MATHS</p>
+        <p>HARVARD UNIVERSITY</p>
+        <p>15 YEARS OF EXPERIENCE</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="femaleava1.png" alt="HARSHITA"  style="width:50% ; height:200px">
+      <div class="container">
+        <h2>HARSHITA</h2>
+        <p class="title">MECHANICS</p>
+        <p>NIT WRANGAL</p>
+        <p>8 YEARS OF EXPERIENCE</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
