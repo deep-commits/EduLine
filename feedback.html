@@ -1,67 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+ 	<title>Feedback Form</title>
+ 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="Style.css">
 
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
 </head>
-<body>
 
-<h3>FEEDBACK FORM</h3>
+<body>	
+
+<div class="view">
+	<img src="1.svg">
+</div>
 
 <div class="container">
-  <form action="/action_page.php">
-    <label for="fname">FIRST NAME</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			
+			<h1 class="text-center mt-5 font-weight-bold">Feefback</h1>
+			<hr class="bg-white">
+			<h6 class="text-center">Please write your feedback below:</h6>
+			<h3 class="mt-4">How do you rate your overall experience?</h3>
 
-    <label for="lname">LAST NAME</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<form>
+				<label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="bad">Average</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="bad">Good</label>
 
-    <label for="country">COUNTRY</label>
-    <select id="country" name="country">
-      <option value="australia">INDIA</option>
-      <option value="canada">CANADA</option>
-      <option value="usa">USA</option>
-    </select>
+			</div>
+			</div>					
 
-    <label for="subject">SUBJECT</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Full Name*<br>
+					<input type="text" id="text" required="" placeholder="Deepak sharma"></label>
 
-    <input type="submit" value="Submit">
-  </form>
+					<label class="col-md-4">Email*<br>
+					<input type="text" id="text" required="" placeholder="sharmad8363@gmail.com"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Age*<br>
+					<input type="number" id="text" required="" placeholder="18"></label>
+
+					<label class="col-md-4">Phone*<br>
+					<input type="number" id="text" required="" placeholder="+919351711854"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-8">Message*<br>
+					<textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5"></textarea></label>
+			</div>
+
+						<div class="row">
+				<div class="col-md-2"></div>
+				<button class="btn btn-primary" style="width: 53.5%; position: absolute; margin-left: 15%;">Submit</button>
+			</div>
+			</form>
 </div>
 
 </body>
-</html>
+</html>  
